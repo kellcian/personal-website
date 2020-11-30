@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteName: 'Favour Max-Oti',
+  siteDescription: 'my personal website and portfolio',
+  siteUrl: 'https://favourmax-oti.netlify.com',
   plugins: [
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -42,15 +42,15 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Gridsome Portfolio Starter Blog',
-          feed_url: 'https://gridsome-portfolio-starter.netlify.com/rss.xml',
-          site_url: 'https://gridsome-portfolio-starter.netlify.com/'
+          title: 'Kells Kitchen Blog',
+          feed_url: 'https://favourmax-oti.netlify.com/rss.xml',
+          site_url: 'https://favourmax-oti.netlify.com/'
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
-          author: 'Andre Madarang',
+          url: 'https://favourmax-oti.netlify.com' + node.path,
+          author: 'Favour Max-Oti',
           date: node.date
         }),
         output: {

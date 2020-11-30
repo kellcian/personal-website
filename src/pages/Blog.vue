@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <div class="container-inner mx-auto py-16">
-      <div v-for="post in $page.posts.edges" :key="post.id" class="post border-gray-400 border-b mb-12">
+    <div class="py-16 mx-auto container-inner">
+      <div v-for="post in $page.posts.edges" :key="post.id" class="mb-12 border-b border-gray-400 post">
         <h2 class="text-3xl font-bold"><g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link></h2>
-        <div class="text-copy-secondary mb-4">
+        <div class="mb-4 text-copy-secondary">
           <span>{{ post.node.date }}</span>
           <span> &middot; </span>
           <span>{{ post.node.timeToRead }} min read</span>
         </div>
 
-        <div class="text-lg mb-4">
+        <div class="mb-4 text-lg">
           {{ post.node.summary }}
         </div>
 
@@ -40,10 +40,10 @@ query Posts ($page: Int) {
       node {
         id
         title
+        path
         date (format: "MMMM D, Y")
         summary
         timeToRead
-        path
       }
     }
   }

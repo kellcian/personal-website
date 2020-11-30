@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "blog/images"
+public_folder: "images"
+
+collections:
+ - name: "blog"
+   label: "Blog"
+   folder: "blog"
+   create: true
+   slug: "title"
+   fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Path", name: "path", widget: "string"}
+    - {label: "Publish Date", name: "date", widget: "datetime"}
+    - {label: "Tags", name: "tags", widget: "select", multiple: true, min: 1, max: 5, options: ["Design", "Frontend", "Backend", "API", "JAM Stack", "Development", "Laravel", "Vue Js"]}
+    - {label: "Summary", name: "summary", widget: "markdown"}
+    - {label: "Body", name: "body", widget: "markdown"}
