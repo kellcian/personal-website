@@ -4,7 +4,7 @@
       <nav class="container flex flex-wrap items-center justify-between py-8 mx-auto">
         <div>
           <g-link  to="/">
-              <h2 class="w-64 font-4xl">Favour, <span class="text-green-700">Max-Oti</span></h2>
+              <h2 class="w-64 font-bold font-8xl">Favour Max-Oti</h2>
           </g-link>
           <!-- <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link> -->
         </div>
@@ -50,7 +50,16 @@
     <footer class="text-white bg-green-700">
       <div class="container flex flex-col items-center justify-between py-8 mx-auto lg:flex-row">
         <div class="flex flex-col items-center justify-between mb-8 lg:mb-0 md:flex-row">
-          <div>Copyright Favour Max-Oti {{ new Date().getFullYear() }}. All rights reserved.</div>
+          <div class="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
+              <div>
+                Copyright Favour Max-Oti {{ new Date().getFullYear() }}.  
+              </div>
+              
+              <div class="sm:ml-2">
+                All rights reserved.  
+              </div>  
+            </div>
+
           <div class="md:ml-3">
             <a href="/rss.xml" class="font-normal text-white hover:text-gray-400">RSS Feed</a> |
             <a href="/sitemap.xml" class="font-normal text-white hover:text-gray-400">Sitemap</a>

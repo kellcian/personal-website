@@ -75,13 +75,13 @@
     <div class="overflow-x-hidden">
       <div class="pt-16 contact-me bg-background-secondary">
         <div class="relative pb-4 mx-auto text-xl container-inner">
-          <h2 class="mb-6 font-bold" id="contact">Contact me:</h2>
+          <h2 class="mb-6 font-bold tex-center sm:text-left" id="contact">Contact me:</h2>
 
           <div class="absolute top-0 right-0" style="transform: translate(100%) rotate(180deg)">
             <svg width="170px" height="170px"><use xlink:href="#dots-triangle" /></svg>
           </div>
 
-          <p class="mb-12">Static sites cannot submit forms on their own. However, services like <a href="https://www.netlify.com/docs/form-handling">Netlify Forms</a> or <a href="https://formspree.io">FormSpree</a> can help you do this without a backend.</p>
+          <p class="mx-auto mb-12 sm:mx-0">If you want me to create a website or blog for you, send me a message here and I will get back to you.</p>
 
           <div class="mb-16 text-lg sm:text-lg">
             <form
